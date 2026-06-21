@@ -35,3 +35,7 @@ http://localhost:8080/tree?token=<replace-with-a-long-random-token>
 ```
 
 Use this URL to connect IntelliJ IDEA to an existing Jupyter server.
+
+## Credits
+
+Made by Egor Chumichev. With love lost and dreams left unchased.
