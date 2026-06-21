@@ -1,0 +1,13 @@
+name: "machine-learning-laboratory"
+
+services:
+  server:
+    build:
+      context: "./../"
+      target: "development"
+      dockerfile: "./docker/images/server.dockerfile"
+    ports:
+      - "8080:8080"
+    environment:
+      - "NOTEBOOK_TOKEN=${REPOSITORY__NOTEBOOK_TOKEN}"
+    restart: "unless-stopped"
